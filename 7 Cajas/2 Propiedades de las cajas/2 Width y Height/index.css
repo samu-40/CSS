@@ -1,0 +1,16 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+    /* Esta propiedad permite cambiar una caja en block a una en inline pero conservando u otrorgando caracteristicas (depende del estado de la caja si es block o inline) de una caja en block*/
+    display: inline-block;
+    /* Esta propiedad modifica el color de fondo de la caja */
+    background-color: red;
+    /* Esta propiedad le da un alto a la caja */
+    height: 100px;
+    /* Esta propiedad le da un ancho a la caja */
+    width: 100px;
+}

@@ -1,0 +1,28 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+}
+
+.grid-container {
+    background: #444;
+    border: 5px solid #000;
+    display: grid;
+    /* De esta manera podemos nombrar las lineas, el numero reperesenta la celda y los nombres las lineas. */
+    grid-template-rows: [line-arriba]200px 200px[line-media] 200px;
+    grid-template-columns: [line-izquierda]200px 200px 200px[line-final];
+}
+
+.grid-item {
+    border: 1px solid #000;
+}
+
+.grid-item:first-child {
+    background: lightblue;
+    /* Podemos delimitar su tamaño utilizando estos nombres (es mas facil). */
+    grid-column: line-izquierda / line-final;
+    grid-row: line-arriba / line-media;
+}

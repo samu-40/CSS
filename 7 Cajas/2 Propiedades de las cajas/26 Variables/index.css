@@ -1,0 +1,37 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+/* Para crear variables tenemos que usar :root, donde para crear la variable debemos poner -- y depsues elnombre de la variable, seguido de : y el valor de la variable para finalizar con el ; */
+
+:root {
+    --color-rojo-claro: #f44;
+    --color-azul-claro: #66f;
+}
+
+
+/* root es para crear una variable global, pero para crear una variable local debemos, por ejemplo, crear la variable dentro de la etiqueta div y asi solo los elementos div podran usar esta variable. */
+
+div {
+    --color-x: #f88;
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+
+.container {
+    background: var(--color-rojo-claro);
+}
+
+.container-2 {
+    background: var(--color-azul-claro);
+}
+
+p {
+    color: var(--color-x);
+    /* El p no va a cambiar de color ya que la variable solo fue creada para los elementos div. */
+}

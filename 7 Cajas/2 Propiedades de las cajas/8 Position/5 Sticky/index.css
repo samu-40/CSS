@@ -1,0 +1,15 @@
+/* Leer 0 Nota */
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.box-container {
+    background: brown;
+    /* Esta propiedad es una conbinacion de relative con fixed, ya que conserva su lugar pero cuando hacemos scroll esta se vuelve fija, es decir, la caja esta ubicada como en el ejemplo, entre dos textos, cuando le damos la propiedad esta conserva su lugar (como relative, no se posiciona delante de otros elementos) pero cuando hacemos scroll y llegamos hasta ella esta empieza a comportarse como fixed. */
+    position: sticky;
+    top: 20px;
+    /* Mientras no lleguemos hasta el elemento este va a conservar su posicion original y no va tomar las propiedades top, left, right, bottom o z-index, pero cuando lleguemos este va a activar las propiedades top, left, right, bottom o z-index que le indiquemos. */
+}

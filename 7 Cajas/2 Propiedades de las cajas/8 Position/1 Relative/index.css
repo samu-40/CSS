@@ -1,0 +1,37 @@
+/* Leer 0 Nota */
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    background: yellow;
+}
+
+.caja1 {
+    background: orange;
+}
+
+.caja2 {
+    background: green;
+    /* Esta propiedad permite posicionar una caja partiendo desde su posicion original. Cuando las propiedades top y left estan definidas las otras dos propiedades (right y bottom) no se ejecutaran ya que left y top tienen mas importancia (se deberia trabajar solo con left y top), ahora si no se encuentran left y top obviamente funcionaran lasotras propiedades. */
+    position: relative;
+    top: 20px;
+    left: 50px;
+    /* no toma las propiedades */
+    right: 10px;
+    bottom: 30px;
+    /* Si se le dan valores negativos a las propiedades estan funcionaran pero a la inversa, si usamos valores negativos la propiedad actual se convierte en su propiedad opuesta, ejemplo: top:-10px; => bottom:10px; y left: -10px => right:10px; */
+}
+
+.caja3 {
+    background: lightblue;
+}
+
+.caja4 {
+    background: yellow;
+}

@@ -1,0 +1,3 @@
+Un shorthand para todas las propiedades anteriores es Flex: ;. Donde el primer valor es el flex-grow, el segundo es el flex-shrink y el ultimo es el flex-basis:
+
+flex: 2 1 440px;

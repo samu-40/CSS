@@ -1,0 +1,28 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    background: #333;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 1fr 1fr;
+    /* Estas dos propiedades permiten separar las las filas de otras filas o separar las columnas de otras columnas. No separa las filas o las columnas de su contenedor. */
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    /* Para estas dos propiedades hay un shorthand llamado grid-gap donde el primer valor se aplica en las filas y el segundo en las columnas, si solo se le da un valor se le aplica tanto a filas como a columnas */
+    grid-gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background: #999;
+}

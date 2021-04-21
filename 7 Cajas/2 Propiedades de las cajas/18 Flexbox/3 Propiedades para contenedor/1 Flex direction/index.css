@@ -1,0 +1,49 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container1 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad cambia la direccion de el Main Axios, esta es la que viene por defecto. */
+    flex-direction: row;
+}
+
+.flex-container2 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Invierte el sentido del Main Axios y en el que se posicinan los items */
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+.flex-container3 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Ahora el Main Axios trabaja de manera vertical, como lo hace el Cross Axios */
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex-container4 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Lo mismo que row-reverse solo que esta vez trabaja de manera vertical. */
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    text-align: center;
+}

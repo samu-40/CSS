@@ -1,0 +1,33 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+    /* Display es una propiedad que modifica el comportamineto de las cajas */
+    /* display: block; este es el valor por defecto de display*/
+    /* Si aplicamos el valor inline cambiamos de una caja en bloque (block) a una caja en linea (in line) */
+    display: inline;
+    /* A las cajas en linea no se les puede aplicar un width o un height ya que abarcan el tamaño de su contenido */
+    height: 100px;
+    width: 80px;
+}
+
+#p1,
+#p2 {
+    /* Los elementos en bloque si se les puede aplicar un height y un width */
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    display: block;
+}
+
+
+/* Mas adelante veremos esta propiedad mas a fondo. */

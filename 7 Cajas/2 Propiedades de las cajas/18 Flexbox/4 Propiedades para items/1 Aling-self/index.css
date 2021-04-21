@@ -1,0 +1,26 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container {
+    background: #fa4;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    text-align: center;
+}
+
+.tres {
+    /* Esta propiedad permite alinear una caja en Cross Axis, recibe todos los valores de Aling-items y su valor por defecto es strech (como en aling-items). */
+    align-self: center;
+}

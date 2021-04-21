@@ -1,0 +1,97 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container1 {
+    background: #fa4;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+}
+
+.flex-container2 {
+    background: #fa4;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+}
+
+.flex-container3 {
+    background: #fa4;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+}
+
+.flex-container4 {
+    background: #fa4;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+}
+
+.flex-item1 {
+    background: #248;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    outline: 3px solid red;
+    /* Esta propiedad trabaja con el espacio sobrante del contenedor y lo reparte en partes iguales a sus items. Podriamos decir que reparte por partes, es decir, el valor de la propiedad indica cuantas partes se van a repartir, en este caso se va a repartir una sola parte a todos los elementos, si el espacio sobrante es de 900px entonces a cada caja le tocaria 300px */
+    flex-grow: 1;
+}
+
+.flex-item2 {
+    background: #248;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    outline: 3px solid red;
+}
+
+.tres2 {
+    /* Cuando este valor se lo damos a un solo elemento este va a tomar todo el espacio sobrante. */
+    flex-grow: 1;
+}
+
+.flex-item3 {
+    background: #248;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    outline: 3px solid red;
+}
+
+.uno3 {
+    /* Tambien podemos repartir el restante entre solo dos cajas y dejar una por fuera, de esta manera si el sobrante es de 900px a cada caja (que se le aplico la propiedad) le tocaria 600px, en este caso. */
+    flex-grow: 1;
+}
+
+.tres3 {
+    flex-grow: 1;
+}
+
+.flex-item4 {
+    background: #248;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    outline: 3px solid red;
+}
+
+.uno4 {
+    /* Tambien le podemos dar otro valor como el 2 o el 3, esto provocaria que si el sobrante fuera de 900px se le daria 600px a la primera caja y 300px a la ultima. */
+    flex-grow: 2;
+}
+
+.tres4 {
+    flex-grow: 1;
+}
+
+
+/* flex-grow nos permite trabajar de manera responsive ya que si se achica la pantalla el espacio sobrante se achica y por ende tambien las cajas. */

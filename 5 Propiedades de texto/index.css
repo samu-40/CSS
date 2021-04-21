@@ -1,0 +1,14 @@
+* {
+    /* Esta es la forma de llamar a la fuente exportada (tambien conseguimos la manera de llamarla en la pagina de google fonts) */
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+}
+
+.form {
+    font-size: 25px;
+}
+
+.form__h2 {
+    font-size: 2em;
+    color: red;
+}

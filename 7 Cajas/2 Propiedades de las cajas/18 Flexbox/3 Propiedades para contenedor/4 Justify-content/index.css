@@ -1,0 +1,49 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Todos los valores trabajan en el Main Axis */
+
+.flex-container1 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite centrar los elementos. */
+    justify-content: center;
+}
+
+.flex-container2 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite que los elementos esten totalmente separados unos de otros. */
+    justify-content: space-between;
+}
+
+.flex-container3 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite separar los elementos unos de otros pero dejando cierto espacio entre ellos y su contenedor (lo que hace para ser mas exactos es que le da un margin a cada caja, por eso el espacio entre las cajas del principio y del final son mas pequeños en comparacion con los espacios que hay entre las cajas, la suma de los margins.)*/
+    justify-content: space-around;
+}
+
+.flex-container4 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite separar los elemenstos dejando la misma cantidad espacio entre ellos y su contenedor (le da un mismo espacio a todo). */
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Metodologia BEM</title>
+</head>
+
+<body>
+    <!-- La metodologia BEM es una de las tantas metodolgias que existen para trabajar de una manera mas ordenada y eficiente al realizar paginas webs. La metodoligia consiste en crear, en HTML, clases que ayuden a mejorar el reconocimientos de los elemntos seleccionados en CSS y Javascript. Esto brinda mas orden y velocidad al trabajar con tantas etiquetas como se suele hacer con paginas webs. -->
+
+    <!-- Al crear contenedores de otros elemntos como puede ser un div o un header, main, section, ect... se les otorga una clase con el nombre que se le quiera dar como en el sigueinte ejemplo. -->
+    <div class="form">
+        <!-- Luego a los hijos se les otorga clases comenzando con el nombre de su padre, luego dos guiones bajos y el nombre que se le quiera dar al elemento.
+        
+        Si hay muchos elemntos iguales, como es en el caso de este ejemplo, se quiere cambiar uno en especifico se le coloca despues del nombre del elemnto dos guiones y la palabra active, luego si se quiere modificar los otros elemntos lo hacemos de forma dinamica con Javascript. -->
+        <input type="text" class="form__input--active" value="Metodologia BEM">
+        <input type="text" class="form__input" value="Metodologia BEM">
+        <input type="text" class="form__input" value="Metodologia BEM">
+        <p class="form__p">
+            <!-- Si tenemos un hijo que tiene otro hijo la forma de otorgarle una clase es la siguiente: el nombre del abuelo y dos guienos bajos, el nombre del padre y un guion, por ultimo el nombre del elemnto, como en siguiente ejemplo. -->
+            <h1 class="form__p-h1">Hola mundo</h1>
+        </p>
+    </div>
+</body>
+
+</html>

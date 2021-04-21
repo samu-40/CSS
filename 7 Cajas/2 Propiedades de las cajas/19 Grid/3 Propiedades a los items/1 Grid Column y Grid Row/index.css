@@ -1,0 +1,45 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    background: #333;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 1fr;
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background: #999;
+}
+
+.grid-item:first-child {
+    /* first-child es para seleccionar el primer hijo (seleccioamos el primer grid-item)*/
+    background: #900;
+    /* Esta propiedad se maneja por grid lines rows y grid lines column, permite definir de que linea a que linea va a llegar nuestra grid cell. */
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.grid-item:nth-child(2) {
+    /* De esta manera seleccionamos el segundo elemento */
+    background: #090;
+    grid-column: 3/5;
+    /* No pongo de la 1 / 3 de nuevo ya que esto lo posicionaria abajo de la caja uno porque esos espacios ya entan ocupados por la misma. */
+}
+
+.grid-item:nth-child(5) {
+    background: #009;
+    /* span es una unidad que nos permite en vez de contar lineas, especificar cuantas columnas o filas va a ocupar, siempre especificando d que line arranca. */
+    grid-column: 1/span 3;
+    grid-row: 3/ span 2;
+}

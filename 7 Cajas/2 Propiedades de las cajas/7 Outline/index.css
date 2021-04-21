@@ -1,0 +1,23 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    display: inline-block;
+}
+
+.caja1,
+.caja4 {
+    /* Esta propiedad permite remarcar un objeto, trabaja igual que border pero este borde que se crea no ocupa espacio, por eso en el ejemplo no se ve el borde superior de ambas cajas ni el borde izquierdo de la caja 1. */
+    outline: 5px solid red;
+}
+
+.caja {
+    margin: 20px 50px;
+    outline: 5px solid red;
+}

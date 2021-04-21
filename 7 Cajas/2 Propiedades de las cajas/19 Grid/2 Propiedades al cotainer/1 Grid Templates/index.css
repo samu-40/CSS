@@ -1,0 +1,42 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    display: grid;
+    /* Al aplicar esta propiedad lo que estamos haciendo es otorgandole al elemento ciertas propiedades, pero como no estamos llamando a estas propiedades no pasa nada en la pagina. Para empezar a trabajar con Grid y crear una grilla debemos usar las siguientes propiedades:*/
+    grid-template-rows: 150px 150px 150px;
+    /* Esta propiedad permite definir de que tamaño y cuantas filas vamos a tener en nuestra grilla.*/
+    /* Hay 9 cajas pero solo las 3 que definimos son parte de la grilla, las otras cajas se les denomina grid implicito, algo que veremos mas a delante. */
+    grid-template-columns: 150px 150px 150px;
+    /* Esta propiedad permite definir el tamaño y la cantidad de columnas que va a tener nuestra grilla. */
+    /* Si comentamos o eliminamos esta propiedad podremos ver el grid implicito del que hablamos arriba */
+}
+
+.dos {
+    /* Podemos usar distintas medidas para definir las filas y las columnas, en la grilla de arriba usamos px por esto tabla no es flexibe en cuanto las medidad, pero podemos usar la medida fr que es "igual" que flex-grow, de esta manera podemos hacer la grilla un poco mas flexible. */
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 1fr;
+}
+
+.tres {
+    /* Hay una funcion llamada repeat que tambien nos ayuda a crear filas y columnas de manera mas rapida, necesita 2 parametros: 
+    1) La cantidad dde veces a repetir
+    2) Las medidas de la fila o columna
+    En este caso repetimos 2 veces una fila de 150px y otra de 100px, es decir que en total terminamos con 4 filas la primera de 150px, la segunda de 100px, la tercera de 150px y la cuarta de 100px.  */
+    grid-template-rows: repeat(2, 150px 100px);
+    /* Tambien podemos repetir una medida y agregar una fuera de la funcion. En este caso le pedimos que repita 3 veces una columna de 100px y que despues de la repeticion agregue una columna de 1fr. */
+    grid-template-columns: repeat(3, 100px) 1fr;
+}
+
+.grid-item {
+    border: 1px solid #000;
+}

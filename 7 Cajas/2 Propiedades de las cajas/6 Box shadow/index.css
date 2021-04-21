@@ -1,0 +1,28 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+    /* Esta propiedad permite cambiar una caja en block a una en inline pero conservando u otrorgando caracteristicas (depende del estado de la caja si es block o inline) de una caja en block*/
+    display: inline-block;
+    background-color: red;
+    margin: 50px;
+    padding: 100px;
+    /* 
+        Esta propiedad permite dar sombra a la caja. Se le indican 5 valores: 
+
+        El primero y el segundo hacen referencia a la posicion de la sombra, el primero maneja el eje X y el segundo el eje Y.
+
+        El tercero hace refencia al nivel de desenfoque de la sombra.
+
+        El cuarto hace referencia a el tamaño del borde de la sombra (por lo general se le da 0).
+
+        Y el quinto hace referencia a el color de la sombra.
+    */
+    box-shadow: 2px 4px 15px 0 black;
+    /* Esta propiedad otorga sombra al texto. Trabaja igual que el box-shadow solo que el valor para el borde de la sombra ya no esta. */
+    text-shadow: 2px 2px 7px white, 2px 2px 7px white, 2px 2px 7px white;
+    /* Para intensificar la sombra podemos poner una coma y copiar y pegar lo mismo (funciona para box-s y para text-s) */
+}

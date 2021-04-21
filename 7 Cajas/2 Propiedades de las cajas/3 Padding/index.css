@@ -1,0 +1,42 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+    /* Esta propiedad permite cambiar una caja en block a una en inline pero conservando u otrorgando caracteristicas (depende del estado de la caja si es block o inline) de una caja en block*/
+    display: inline-block;
+    /* Esta propiedad modifica el color de fondo de la caja */
+    background-color: red;
+    /* Esta propiedad otorga un espaciado entre el contenido de la caja y sus bordes */
+    /* 
+        padding-top: ; borde superior con el contenido
+        padding-right: ; borde derecho con el contenido
+        padding-bottom: ; borde inferior con el contenido
+        padding-left: ; borde izquierdo con el contenido 
+    */
+    /* Pero la forma que aparece arriba no es tan practica ya que retraza el proceso de escribir codigo, para esto existe la siguente propiedad: */
+    /* 
+        padding: Xpx;             --> un valor
+        padding: Xpx Xpx;         --> dos valores
+        padding: Xpx Xpx Xpx Xpx; --> cuatro valores
+     */
+    /* Esto en el mundo de la programacion se le conoce como shorthand que significa mano corta y como su nombre lo indica se utiliza para abreviar el proceso de escribir codigo. Este shorthand funciona de la siguiente manera: 
+    Se pueden colocar unicamente un valor, dos valores o cuatro valores.
+
+    Cuando se coloca 1 valor:
+    Este hace referencia a el espaciado entre el contenido y todos los bordes de las caja.
+
+    Cuando se colocan 2 valores:
+    El primer valor hace referencia al padding-top y al padding-bottom.
+    El segundo valor hace referencioa al padding-right y al padding-left.
+
+    Cuando se colocan 4 valores:
+    el primer valor hace referencia al padding-top, el segundo valor hace referencia al padding-right, el tercer valor hace referencia al padding-bottom y el ultimo valor hace referencia al padding-left. */
+    /* 
+        padding: 10px;
+        padding: 10px 20px 30px 40px;
+    */
+    padding: 10px 50px;
+}

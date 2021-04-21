@@ -1,0 +1,52 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Todos los valores trabajan en el Cross Axis */
+
+.flex-container1 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad viene por defecto y alarga el heigth del elemento (si no lo tiene) a todo el contenedor. */
+    align-items: stretch;
+}
+
+.flex-container2 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite que los elementos se posicionen arriba. */
+    align-items: flex-start;
+}
+
+.flex-container3 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite que los elementos se centren. */
+    align-items: center;
+}
+
+.flex-container4 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad permite que los elementos se pongan abajo. */
+    align-items: flex-end;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    margin: 5px;
+    text-align: center;
+}

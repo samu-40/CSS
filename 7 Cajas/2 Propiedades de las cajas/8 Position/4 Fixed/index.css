@@ -1,0 +1,20 @@
+/* Leer 0 Nota */
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+body {
+    /* Hago esto para separar el text del borde superior del body */
+    padding-top: 100px;
+}
+
+.box-container {
+    background: brown;
+    /* Esta propiedad trabaja igual que absolute pero con la diferencia de que el elemento queda fijo en la pantalla, si hicieramos scroll (bajar o subir usando la barra de la derecha o la ruedita del mouse) este se quedaria en el lugar que le asignemos. */
+    position: fixed;
+    /* Hago esto para ubicar el elemento en el espacio vacio que quedo por el padding-top del body. De esta manera podemos imaginar que este elemento es un menu de navegacion, por ejemplo (esta no es la manera mas recomendable, la utilizamos porque esto es una practica y porque es la froma mas rapida en esta situacion, hay muchas otras maneras mas profesionales de hacer esto mismo.) */
+    margin-top: -100px;
+}

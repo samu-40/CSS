@@ -1,0 +1,36 @@
+/* En CSS se lee el codigo en cascada, es decir, si se le aplica varios estilos a un elemento el estilo que se le aplica es el que esta al final del codigo (como en una cascada). Pero apesar de que en CSS se lee en cascada hay algo que esta por arriba de eta lectura, que son las jerarquias de los selectores. */
+
+
+/* !important es lo primero en las jerarquia, lo mas importante (como el nombre lo dice). No se recomiendo usarlo porque despues no se puede modificar ni cambiar, solo hay que usarlos en casos extremos.*/
+
+h1 {
+    color: black !important;
+}
+
+
+/* Abajo de !important tenemos a los estilos en linea. Estos se declaran en el documento HTML */
+
+
+/* Despues estan los identificadores (id en HTML). */
+
+#h1 {
+    color: seagreen;
+}
+
+
+/* Luego tenemos a las clases, pseudo-clases y atributos*/
+
+[atributo="h1"] {
+    color: saddlebrown;
+}
+
+.h1 {
+    color: red;
+}
+
+
+/* Y por ultimo tenemos a los elementos (etiquetas en HTML) y los pseudo-elementos.*/
+
+h1 {
+    color: royalblue;
+}

@@ -1,0 +1,57 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+
+/* Las grillas que hemos venido haciendo hasta ahora no eran ni medio dinamicas solo se hacian mas grandes por que le dambamos el valor fr, pero hay otros valores que haran nuestra grilla mas dinamica, estos valores se usan normalmente con la funcion repeat. */
+
+.grid-container {
+    background: #333;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+}
+
+.uno {
+    grid-template-rows: repeat(3, 150px);
+    /* Este valor permite que las columnas midan el ancho minimo de su contenido. */
+    grid-template-columns: repeat(3, min-content);
+}
+
+.dos {
+    grid-template-rows: repeat(3, 150px);
+    /* Este valor permite que las columnas midan el ancho maximo de su contenido. */
+    grid-template-columns: repeat(3, max-content);
+}
+
+.tres {
+    grid-template-rows: repeat(3, 150px);
+    /* Este valor permite darles a las columnas un minimo y un maximo. Podemos usar los valores arriba.*/
+    grid-template-columns: repeat(3, minmax(min-content, 200px));
+}
+
+.cuatro {
+    grid-template-rows: repeat(3, 150px);
+    /* Este valor permite crear filas y columnas dependiendo de si hay suficiente espacio o no, es decir, tenemos que crear celdas de 100px de minimo y 1fr de maximo, dependiendo del espacio y el tamaño de las celdas decide si elminar una fila o columna, o si crear una fila o una columna.*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.cinco {
+    grid-template-rows: repeat(3, 150px);
+    /* Este valor permite que caundo haya pocas celdas estas ocupen todo el ancho y va a escalar las celdas. */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background: #999;
+}

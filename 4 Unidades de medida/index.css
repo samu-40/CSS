@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* En CSS se trabaja con dos tipos de medidas, la fijas que son los pixeles (px), cm, mm, puntos(pt), etc, y las medidas relativas que trabajan dependiendo del tamaño de su contenedor que son los rem, em, vh, vw y % (esta unidad trabaja dependiendo de su contendor, si su contendor es el body va a ocupar todo lo que quieras del body, pero si esta contenida por otra caja ocupara el espacio que tu le indiques de su contenedor), estas medidas sirven para poder trabajar con responsive desing, es decir, llevar una pagina a distintos dispositivos como el tlf, la tv, una pantalla de publicidad, etc...*/
+
+.form {
+    font-size: 20px;
+    background-color: #000;
+    width: 50vw;
+    height: 50vh;
+    /* vh y vw representan el tamaño de la pantalla de cualquier dispositivo. El vw es el vue-width (ancho del la pantalla) y el vh es el vue-heigth (alto de la pantalla). */
+}
+
+.form__h2 {
+    font-size: 5em;
+    /* Los em trabajan dependiendo de su padre, es decir, herendan el tamaño de contenedor. Si no se le da un tamaño al padre automaticamente el navegador define que un em es igual a 16px.
+    
+    En este ejemplo se le da al padre un font-size de 20px, por ende ahora un em equivale a 20px; si no se le diera un font-size un em valdria 16px. */
+}

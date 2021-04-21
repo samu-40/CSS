@@ -1,0 +1,46 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+}
+
+.div1 {
+    /* Esta propiedad es un shorthand:
+    overflow-x: ;
+    ovreflow-y: ; */
+    /* Si tenemos una caja y de esta se desborda un texto, una imagen o lo que sea, esta propiedad permite eliminar ese exceso. 
+    Los valores de esta propiedad son: */
+    /* - inherit: (valor por defecto) permite que se desborde el contenido. */
+    overflow: inherit;
+}
+
+.div2 {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    /* - hidden: oculta el contenido sobrante. */
+    overflow: hidden;
+}
+
+.div3 {
+    position: absolute;
+    top: 0;
+    right: 340px;
+    /* - scroll: oculta el exceso y coloca barras para poder bajar o subir y desplazarse hacia la derecha o hacia la izquierda. */
+    overflow: scroll;
+}
+
+.div4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* - auto: evalua en que eje se situa el exceso y dependiendo del eje agrega barras para  bajar o subir, o, desplazarse hacia la derecha o hacia la izquierda. */
+    overflow: auto;
+}

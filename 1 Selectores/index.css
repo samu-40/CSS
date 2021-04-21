@@ -1,0 +1,62 @@
+/*selector universal (selecciona todo)*/
+
+* {
+    color: red;
+}
+
+
+/*selector de tipo*/
+
+h1 {
+    color: blue;
+}
+
+
+/* selector de clases */
+
+.h2 {
+    color: brown;
+}
+
+
+/* selector por id */
+
+#element {
+    color: cadetblue;
+}
+
+
+/* selector por atributo */
+
+[select='purple'] {
+    color: purple;
+}
+
+
+/* selector por descendiente (selecciona al hijo de un elemento, tambien se puede trabajar con cualquier selector)*/
+
+h1 b {
+    color: darkblue;
+}
+
+.hola span {
+    color: firebrick
+}
+
+#hola i {
+    color: darkmagenta;
+}
+
+[atributo='hola'] span {
+    color: gold;
+}
+
+
+/* selctor por pseudoclase */
+
+.hover:hover {
+    color: green;
+}
+
+
+/* Hay muchas pseudoclases (en este ejemplo solo vemos una para saber que existen) se utilizan para desencadenar eventos (acciones) que modifican el elemento. */

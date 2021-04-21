@@ -1,0 +1,17 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+    /* Esta propiedad permite cambiar una caja en block a una en inline pero conservando u otrorgando caracteristicas (depende del estado de la caja si es block o inline) de una caja en block*/
+    display: inline-block;
+    background-color: red;
+    margin: 50px;
+    padding: 20px;
+    /* Esta propiedad permite hacer mas suaves las esquinas de los bordes de las cajas. Si se le da un 50% se vuelve un circulo */
+    border-radius: 10px;
+    /* Esta propiedad permite modificar el grosor, el tipo de borde y el color de los bordes de la caja (en ese orden). Hay muchos tipos de bordes, se pueden investigar por internet */
+    border: 10px solid blue;
+}

@@ -1,0 +1,82 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.text {
+    padding: 20px;
+}
+
+
+/* Los pseudo-elementos son elementos que no estan en la pagina pero si se pueden ver. Estos solo funcionan en elementos en block o en inline-block. Solo se le aplican a elementos por ende para usarlos demos colocarlos al lado del nombre de class o id de nuestro elementos de la siguiente manera: . o # text::xxx. Se les puede dar cualquier estilo.*/
+
+.text::first-line {
+    /* Este PE (pseudo-elemento) permite aplicar estilo solo en la primera linea, no importa si el texto se agranda o se encoje el estilo siempre va estar en la primera linea. */
+    color: brown;
+}
+
+.text::first-letter {
+    /* Este PE afecta solo a la primera letra. */
+    font-size: 3em;
+}
+
+form {
+    margin: 30px;
+}
+
+.in1::placeholder {
+    /* Este PE permite afectar el placeholder de los inputs */
+    color: red;
+    font-size: 16px;
+}
+
+p::selection {
+    /* Este PE permite dar estilo a la seleccion (cuando sombreamos un texto y se pone blanco con un fondo azul). */
+    background: yellow;
+    color: blue;
+    /* La unica desventaja de este PE es que se comporta como un elemento en linea, por esto no le podemos dar ni padding, width, height, etc... */
+}
+
+.caja::before {
+    /* Este PE le crea un hijo (fictisio) al elemento seleccionado y lo posiciona antes que todo el contenido del padre, necesita de una propiedad llamada content para poder funcionar. */
+    content: 'Hola mama ';
+    color: red;
+}
+
+.caja::after {
+    /* Funciona igual que ::before solo que esta vez lo posiciona al final del contenido del padre. */
+    content: ' a salir mañana';
+    color: chocolate;
+}
+
+
+/* Con estas ultimas dos propiedades no solo podemos agrgar texto, podemos hacer otras cosas mas creativas como: */
+
+.box {
+    position: relative;
+    height: 50px;
+    width: 100px;
+    margin: 50px auto;
+    background: rgb(214, 213, 213);
+    text-align: center;
+    line-height: 50px;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Podemos hacer un boton con un marcador para saber en donde estamos, ya despues queda hacerlo dinamico con JS para que pase lo mismo con otros botones. */

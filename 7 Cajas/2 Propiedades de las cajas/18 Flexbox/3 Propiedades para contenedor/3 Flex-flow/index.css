@@ -1,0 +1,22 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container1 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta propiedad es un shorthand de flex-direction y flex-wrap. */
+    flex-flow: row-reverse wrap;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    text-align: center;
+}

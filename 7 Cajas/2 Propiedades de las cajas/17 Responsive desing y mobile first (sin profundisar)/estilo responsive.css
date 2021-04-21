@@ -1,0 +1,29 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+div {
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+    background: #ddd;
+}
+
+.caja2 {
+    background: #bbb;
+}
+
+
+/* De esta forma aplicamos un cambio para adaptar las paginas ha otros tipos de viewports. Esto no es responsive desing lo veremosmas adelante en flexbox */
+
+
+/* el max-width indica que cuanndo el viewport llegue a medidas inferiores del valor dado este va a aplicar los estilos especificados. */
+
+@media only screen and (max-width:800px) {
+    div {
+        display: block;
+        width: 100%;
+    }
+}

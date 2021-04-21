@@ -1,0 +1,110 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* La propiedad object-fit sirve para ajustar una imagen a su contendor. */
+
+.caja {
+    margin: 14px;
+    width: 300px;
+    height: 360px;
+    border: 2px solid red;
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+    /* Este valor permite que la imagen se ajuste tomando en cuenta el tamaño de su contenedor para que conserve su resolucion. */
+    object-fit: contain;
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+    /* Este valor permite que la imagen cubra toda la caja y recorta los sobrantes para conservar su resolucion. */
+    object-fit: cover;
+}
+
+.img3 img {
+    width: 100%;
+    height: 100%;
+    /* Este valor hace que la imagen conserve su tamaño original sin importar el tamaño de su contenedor */
+    object-fit: none;
+}
+
+.img4 img {
+    width: 100%;
+    height: 100%;
+    /* Este valor evalua, entre contain y none, quien tiene la resolucion mas pequeña, el valor que la tenga es el que se va a aplicar a la imagen. */
+    object-fit: scale-down;
+}
+
+
+/* Object-position nos permite mover la imagen. */
+
+.cajatop {
+    margin: 14px;
+    width: 360px;
+    height: 250px;
+    /* Invierto los valores para que se note el efecto. */
+    border: 2px solid red;
+}
+
+.img5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Este valor posiciona la imagen mas hacia arriba */
+    object-position: top;
+}
+
+.cajabottom {
+    margin: 14px;
+    width: 360px;
+    height: 250px;
+    /* Invierto los valores para que se note el efecto. */
+    border: 2px solid red;
+}
+
+.img6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Este valor posiciona la imagen mas hacia abajo */
+    object-position: bottom;
+}
+
+.img7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Este valor posiciona la imagen mas a la izquierda */
+    object-position: left;
+}
+
+.img8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Este valor posiciona la imagen mas a la derecha */
+    object-position: right;
+}
+
+.img9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Este valor posiciona la imagen mas a la derecha dependiendo de su numero */
+    object-position: 1em;
+}
+
+.img10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Este valor posiciona la imagen mas a la izquierda dependiendo de su numero */
+    object-position: -4em;
+}

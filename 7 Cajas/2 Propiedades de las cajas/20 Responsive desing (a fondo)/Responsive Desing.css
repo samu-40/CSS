@@ -1,0 +1,41 @@
+* {
+    font-family: 'Sen', sans-serif;
+}
+
+.div-responsive {
+    background: #c95;
+}
+
+
+/* Para empezar a trabajar con responsive desing necesitamos usar si o si esta propiedad @media, la cual nos permite aplicar condicionales. Despues de @media debemos colocar el formato en el que vamos a trabajar, hay muchos pero el que vamos a utilizar y el mas usado es screen, el cual hace referiencia a la pantalla de un dispositivo, luego colocamos el operador logico and y colocamos la/s condicion/es relacionadas con el tipo de formato, por ejemplo, en este caso usamos min-width y max-width las cuales hacen referencia al ancho minimo y maximo de la pantalla del dispositivo. */
+
+
+/* Esta condicional nos permite otorgar estilos a la caja mientras sus valores esten entre 400px (como minimo) y 650px (como maximo). */
+
+@media screen and (min-width:400px) and (max-width:650px) {
+    .div-responsive {
+        background: red;
+    }
+}
+
+
+/* Y podemos agregar mas medidas */
+
+@media screen and (min-width:650px) and (max-width:800px) {
+    .div-responsive {
+        background: green;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .div-responsive {
+        background: lightblue;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .div-responsive {
+        background: #000;
+        color: #fff;
+    }
+}

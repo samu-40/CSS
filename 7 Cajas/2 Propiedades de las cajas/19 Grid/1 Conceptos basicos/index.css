@@ -1,0 +1,32 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    color: #ED1C24;
+}
+
+.item {
+    color: #7F7F7F;
+}
+
+.cell {
+    color: #FFF200;
+}
+
+.row {
+    color: #22B14C;
+}
+
+.colum {
+    color: #3F48CC;
+}
+
+.area {
+    color: #00A2E8;
+}
+
+.line {
+    color: #9D0015;
+}

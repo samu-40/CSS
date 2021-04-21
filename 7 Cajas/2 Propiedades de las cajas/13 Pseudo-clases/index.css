@@ -1,0 +1,66 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Las PC (pseudo-clases) son similares ha los PE, con la diferencia que estos escuchan eventos, es decir, reaccionan a ciertas acciones, dependiendo de la PC, dandole los estilos que queramos. */
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background: slateblue;
+}
+
+.caja1:hover {
+    /* Esta PC provoca que alponer el cursor sobre un elemento este tome los estilos especificados, se van los estilos a salir del elemento. */
+    background: tomato;
+    width: 250px;
+    height: 250px;
+}
+
+.link {
+    margin: 10px;
+    padding: 20px;
+    display: block;
+    color: black;
+}
+
+.a:link {
+    /* Esta PC indica da estilos una pagina EXISTENTE (en mayuscula porque es importante) que no ha sido visitada. */
+    color: blueviolet;
+    /* El primer link por mas que lo visite no se marca en negro ya que no existe. Pero los demas si porque si existen. */
+}
+
+.a:visited {
+    /* Esta PC sirve para dar estilo a los links ya visitados. */
+    color: darkred;
+}
+
+.caja {
+    width: 250px;
+    height: 250px;
+    background: red;
+    margin: 30px;
+}
+
+.caja:active {
+    /* Esta PC da estilos al elemento cuando mantenemos el cursor presionado sobre el, si lo despresionamos vulve a como estaba antes */
+    background: blue;
+    width: 350px;
+    height: 350px;
+}
+
+.input {
+    background: lightgray;
+}
+
+.input:focus {
+    /* Esta PC da estilos al elemento cuando esta seleccionado (no la seleccion que hacemos con el mouse, la apretando tab). */
+    background: white;
+}
+
+.box {
+    margin: 30px;
+}

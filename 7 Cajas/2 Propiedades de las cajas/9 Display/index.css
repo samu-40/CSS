@@ -1,0 +1,28 @@
+/* Ya habiamos visto estas propiedades pero las dejo aca porque las vimos pero en clases distintas, por separado, quiero dejarlo todo junto. */
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    border: 5px solid red;
+    margin: 20px;
+    /* Todos los elementos tienen un display, los valores de esta propiedad son varios pero hay algunos que ya no se usan y hay otros que vamos a ver mas adelante (flex y grid), por eso solo vamos a ver los basicos mas usados.
+
+    Este es el valor que viene por defecto en cualquier caja. Pone los elementos uno debajo de otro (como bloques) ya que estos ocupan todo el width de la pantalla. */
+    /* display: block; */
+    /* Esta propiedad hace 2 cosas:
+    Primero, hace que los elementos se pongan uno al lado del otro (en linea).
+    Segundo, no permite darle un height ni un width, por ende el tamaño de la caja depende del height y el width del contenido. */
+    /* display: inline; */
+    /* Este valor permite hacer una mezcla entre block e inline, permite que la caja se comporte como inline pero conservando caracteristicas de block, es decir, pone la caja en linea y permite darle un height y un width. */
+    display: inline-block;
+}
+
+
+/* Una ultima cosa a tener en cuenta es que si queremos trabajar con esta propiedad tenemos que saber que todos los elementos en html no vienen con display:block; hay elementos que tienen display:inline; por defecto como los <b>, <img>, <spam>, etc... Si queremos modificar alguno de estos elementos debemos usar block o inline-block, en caso contrario (que el elemento tenga por defecto display:block;) debemos usar inline o inline-block. */

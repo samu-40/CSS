@@ -1,0 +1,48 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Todos los valores trabajan en el Cross Axis */
+
+.flex-container1 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: flex-end;
+    /* Tenemos 2 problemas: */
+    /* 1) Tenemos espacios entre los elementos que no queremos. */
+    /* 2) Pusimos el valor flex-end, pero no esta funcionando. */
+}
+
+.flex-container2 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* Para resover el primer problema necesitamos esta propiedad, porque aling-items trabaja solo con elementos que estan en una linea (item), mientras que aling-content trabaja con elementos en varias lineas (contenido), aling-content tambien trabaja con las mismos valores que aling-items */
+    align-content: flex-end;
+}
+
+.flex-container3 {
+    height: 350px;
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* Para resolver el ultimo problema necesitamos usar este valor, es la unica forma de poder usar wrap-reverse y mantener los elementos en la parte inferior de su contennedor. */
+    align-content: baseline;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    margin: 5px;
+    text-align: center;
+}

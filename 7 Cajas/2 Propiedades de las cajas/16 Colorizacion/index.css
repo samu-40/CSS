@@ -1,0 +1,52 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja {
+    margin: 40px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid red;
+    display: inline-block;
+}
+
+.c1 {
+    /* Hay 4 formas de usar los colores: por nombre */
+    background: orange;
+}
+
+.c2 {
+    /* por rgb(red,green,blue) */
+    /* Como podemos ver las inicialez indican el nombre de los colores bases para crear todos los demas colores, los valores son los siguientes:
+    - si dejamos todos los valores en 0 => negro
+    - si dejamos todos los valores en 255 (que es el maximo) => blanco
+    - si dejamos todos los valores en numeros iguales => gris
+    - si combinamos rojo al maximo y verde al maximo => amarillo (por logica no es asi pero en programacion funciona asi)
+    - si combinamos rojo al maximo y azul al maximo => violeta
+    - si combinamos 2 colores el tercero es => intensidad 
+    A hora solo queda jugar con los colores y formar otros.*/
+    background: rgb(150, 80, 30);
+}
+
+.c3 {
+    /* por rgba */
+    /* rgba trabaja igual que rgb solo que el ultimo es la opacidad, como la propiedad opacity: .2;. */
+    background: rgba(170, 50, 210, .7);
+}
+
+.c4 {
+    /* por hexadecimal */
+    /* trabaja igual que rgb y rgba solo que, hexadecimal es un sistema de 16 numeros donde comenzamos del 0 al 10, luego pasamos a la 'a' hasta 'f' (=> valor maximo).
+    Para poder usarlo debemos poner un '#' y despues los valores (#f00).
+    Los valores se trabajan en:
+    - 3 unidades: #a00 (red, green, blue)
+    - 4 unidades: #a008 (la ultima es opacidad)
+    - 6 unidades: #77ee00 (por cada 2 cifras => #77(red)ee(green)00(blue)) 
+    - 8 unidades: #cc88aa99 (igual que la anterior, pero los ultimos dos son la opacidad) */
+    background: #40d;
+}
+
+
+/* una pagina para obtener colores mas rapido es https://htmlcolorcodes.com/es/ (ctrl+click visitar pagina) */

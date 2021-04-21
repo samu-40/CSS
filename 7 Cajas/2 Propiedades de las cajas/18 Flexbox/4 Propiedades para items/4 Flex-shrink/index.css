@@ -1,0 +1,32 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container {
+    margin-bottom: 20px;
+    height: 100vh;
+    display: flex;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.uno {
+    /* Esta propiedad permite que al ser la pantalla mas pequeña una, dos o las que sean de las cajas ceda mas espacio que las otras. */
+    flex-shrink: 3;
+}
+
+
+/* Para poder notar los cambios dedemos hacer la ventana del navegador mas pequeña presionando el icono del cuadrado y modificando su tamaño arrastrando uno de los bordes de la ventana. */
+
+
+/* En este ejemplo vemos que tambien tenemos aplicado un flex-grow, este solo se va a ejecutar cuando todas las cajas lleguen a su tamaño indicado. */

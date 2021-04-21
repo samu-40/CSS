@@ -1,0 +1,41 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.container {
+    margin-top: 500px;
+    display: flex;
+    background: lightblue;
+}
+
+.caja {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #7c4;
+    margin: 20px;
+}
+
+.uno {
+    /* La primera permite colocar una imagen de fondo. */
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/57595wide.jpg);
+    /* Esta permite hacer que la imagen cubra todo su contenedor. */
+    background-size: cover;
+    /* Cuando la imagen es muy pequeña teiende a repetirse para cubrir todo su contenedor, esta propiedad permite evitar eso. */
+    background-repeat: no-repeat;
+    /* Esta propiedad permite mover la imagen. */
+    background-position: -70px;
+}
+
+.texto {
+    background: #fff;
+}
+
+body {
+    background-image: url(https://www.wallpapertip.com/wmimgs/5-54902_high-resolution-macbook-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Esta priedad permite dejar fija la imagen de fondo */
+    background-attachment: fixed;
+}

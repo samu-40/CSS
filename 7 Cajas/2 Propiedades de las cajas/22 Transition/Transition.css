@@ -1,0 +1,57 @@
+* {
+    font-family: 'Sen', sans-serif;
+}
+
+.container {
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    /* Transition es una propiedad que nos permite ver el los distintos cambios que hace un elemento para llegar de un estilo a otro, tenemos que usar esta propiedad acompañada de un evento, (hover, onclick, etc..) que va a estar despues de que declaremos la transicion, ya que sin este la propiedad no funciona. */
+    /* Estas propiedades son obligatorias, la primera es para indicar que estilo vamos a cambiar y la segunda es el tiempo que esta transicion va a durar.*/
+    transition-property: left, background;
+    transition-duration: 4s;
+    /* Esta propiedad causa que al detonar el evento haya un retardo para que comienze la transicion y para cuando termine el evento. */
+    /* transition-delay: 1s; */
+    position: relative;
+    left: 0;
+}
+
+.container:hover>.caja {
+    left: 80%;
+    background: #fff;
+}
+
+.caja:first-child {
+    /* Esta propiedad afecta la velocidad en las etapas de la transicion de las cajas, pero siempre van a llegar al mismo tiempo. */
+    /* linear hace que la caja tenga la misma velocidad durante toda la transicion */
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+    /* ease (valor por defecto) arranca con todo y termina despacio. */
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3) {
+    /* ease-in arranca despacio y termina con todo. */
+    transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4) {
+    /* ease-out arranca con todo y termina despacio, la diferencia con ease es que esta es mas tranquila mientras que ease es mas brusca. */
+    transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5) {
+    /* ease-in-out arranca despacio, acelera y termina despacio. Es como una combinacion entre ease-in y ease-out. */
+    transition-timing-function: ease-in-out;
+}
+
+
+/* Hay un shorthand que es transition:; el cual abrevia todo lo que vimos recien */

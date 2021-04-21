@@ -1,0 +1,12 @@
+Al utilizar la propiedad position los elementos adquieren 5 nuevas propiedades:
+- top
+- right
+- left
+- botton
+- z-index
+
+Con estas propieades podemos controlar la posicion de la caja, ahora la forma en la que va a reaccionar en el body depende de que tipo de position sea:
+- relative
+- absolute
+- fixed
+- sticky

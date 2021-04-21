@@ -1,0 +1,26 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container {
+    background: #fa4;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    outline: 3px solid red;
+}
+
+.uno {
+    /* Esta propiedad trabaja como un width, la unica diferencia es que esta tiene mas importancia que el widht */
+    flex-basis: 400px;
+}

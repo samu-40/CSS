@@ -1,0 +1,13 @@
+/* Cuando usamos los selectores se nos hace mas falcil reconocerlos por el nombre de las clases. */
+
+.form__input--active {
+    color: blue;
+}
+
+.form__input {
+    color: tomato;
+}
+
+.form__p-h1 {
+    color: brown;
+}

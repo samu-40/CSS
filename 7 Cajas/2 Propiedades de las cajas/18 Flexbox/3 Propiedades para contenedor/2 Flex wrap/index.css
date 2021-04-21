@@ -1,0 +1,44 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Si queremos que las cajas guarden sus dimensiones y no que se ajusten al contenedor usamos la sigueinte propiedad. */
+
+.flex-container1 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta viene por defecto, dice que las cajas no van a pasar hacia abajo sino que se van a hacer mas estrechas */
+    flex-wrap: nowrap;
+}
+
+.flex-container2 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Permite mantener los tamaños de las cajas llevando las cajas, que hacen que las otras se achiquen, hacia abajo de las otras. */
+    flex-wrap: wrap;
+}
+
+.flex-container3 {
+    background: #fa4;
+    margin-bottom: 20px;
+    display: flex;
+    /* Esta hace lo mismo que la anterior solo que en vez de ponerlas abajo las pone arriba. */
+    flex-wrap: wrap-reverse;
+}
+
+
+/* Si hacemos mas pequeña la pantalla (shift+ctrl+i en el navegador y presionamos el icono del celular junto a la tablet) podemos ver como los items se van yendo hacia arriba y abajo mientras que se achica la pantalla, lo cual no pasa con los primeros items */
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container {
+    background: #fa2;
+    margin-bottom: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-item {
+    background: #248;
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+.uno {
+    /* Esta propiedad es como un z-index pero que solo trabaja en base a dos cosas:
+    - Main Axis
+    - La direccion del Main Axis
+    
+    Los elementos con mayor valor se van a posicionar de primero hacia a donde apunte el Main Axis, por esta razon la caja uno esta antes que la tres y la dos a pesar de que todas tegan un flex-direction: row-reverse;.*/
+    order: 4;
+}

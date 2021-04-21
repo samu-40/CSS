@@ -1,0 +1,62 @@
+* {
+    font-family: 'Sen', sans-serif;
+}
+
+.container {
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    /* Las animaciones nos permiten hacer que algun elemento haga alguna accion al cargarse la pagina. */
+    /* Estas dos propiedades son obligatorias, la primera es el nombre de la animacion y el segundo es el tiempo que dura la animacion. */
+    animation-name: desplazarse;
+    animation-duration: 3s;
+    /* Esta propiedad especifica el tiempo de retardo de la animacion. */
+    animation-delay: 1s;
+    /* animation-timing-function trabaja y tiene los mismos valores que vimos en transition. */
+    /* animation-timing-function: linear / ease / ease-in / ease-out / ease-in-out; */
+    /* Esta propiedad espesifica la cantidad de veces que la animacion se va a repetir */
+    animation-iteration-count: 1;
+    /* Esta propiedas especifica la forma en la que se va a mover el elemento:
+    - normal: (por defecto) se mueve normalmente.
+    - reverse: empieza en el final y termina en el principio.
+    -alternate: que empieza desde el principio, va al final y vuelve al principio.
+    - alternate-reverse: comienza en el final, va al principio y termina en el final.*/
+    animation-direction: alternate;
+    /* Esta propiedad especifica el modo final de la animacion. Los valores son: 
+    -none: comienza y vuelva a la normalidad.
+    - forwards: deja al elemento con los estilos finales especificados y con la posicion final.
+    - both: permite darle al elemento antes de que empieze la animacion el primer estilo que definimos en el @keyframes. */
+    animation-fill-mode: both;
+}
+
+
+/* Esta es la propiedad que utilizamos para definir la animacion @keyframes, lo que viene despues es el nombre de la animacion. */
+
+@keyframes desplazarse {
+    /* Dentro del @keyframes especificamos que estilos va a tomar el elemento durante la animacion. La primera es una forma de indicar que va a tener el elemento al principio (from => de) y que va a tener en el final (to => para). */
+    /* from {
+        left: 0;
+    }
+    to {
+        left: 80%;
+    } */
+    /* La segunda forma se suele utilizar mas en animaciones mas complejas ya que con esta podemos controlar lo que pasa en distintos momentos de la animacion gracias a los porcentajes. */
+    0% {
+        left: 0;
+        background: #000;
+    }
+    70% {
+        background: red;
+    }
+    100% {
+        left: 80%;
+        background: green;
+    }
+}

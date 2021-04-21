@@ -1,0 +1,58 @@
+/* Leer 0 Nota */
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    background: yellow;
+}
+
+.caja1 {
+    background: orange;
+}
+
+.caja2 {
+    background: green;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    /* Esta propiedad permite cambiar la superposicion de una caja con otra, es decir, modfica si una caja debe estar atras o adelnate de otra caja. El numero mas bajo es el que va estar por debajo de los demas elementos, normalmente el valor por defecto de esta propiedad es 0, si se le da un valor mayor a este obviamente va ponerse delante de otros elementos pero siempre dependiendo del valor del z-index de los demas elementos. */
+    z-index: 1;
+    /* Al darle la propiedad position a la caja tres esta se puso al frente de la caja dos ya que sigue el flujo de html (primero se creo la caja dos y luego se creo la caja tres), pero al darle a la caja 2 un z-index con un valor de 1 esta paso a estar al frente de la caja tres a pesar del flujo html.
+    
+    Algo para tener en cuenta es que al darle z-index a cualquier elemento siempre (en caso de que se quiera poner el elemento mas arriba que todos los elementos) demos darle valores grandes como 30, 50 o 100 ya que si derrepente quisieramos crear una caja en medio seria un problema: imaginemos que ya hay varias cajas creadas y cada una con un z-index 1 y 2 y 3 y 4 y 5 y 6 y 7... ahora queremos meter una caja en medio de la caja 3 y 4 tendriamos que cambiar todos los z-index desde las caja 4 para arriba; pero cuando se dejan z-index con grandes valores podemos meter cajas sin necesidad de estar cambiandos los valores, si queremos meter una caja entre, una caja con un z-index de 30 y una con un z-index de 60, solo tendriamos que darle un z-index de 31 y asi lo podriamos hacer con todas las cajas que queramos meter entre estas dos cajas hasta llegar a un z-index de 59, podriamos meter 29 cajas mas sin problema. */
+}
+
+.caja3 {
+    background: lightblue;
+    position: relative;
+    /* Le damos una posicion relativa a la caja 3 para que adquiera la propiedad z-index (si no hacemos esto no podemos trabajar con las otras cajas ya que estas por defecto no poseen z-index). */
+}
+
+.caja4 {
+    background: yellow;
+}
+
+.padre {
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+    background: lightblue;
+    position: relative;
+}
+
+.hijo {
+    width: 150px;
+    height: 150px;
+    background: orange;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    /* Cuando trabajamos con padres e hijos (contenedores y sus contenidos) el z-index no funciona como normalmente lo hace. Para poder poner a un padre por encima de sus hijo es necesario darles al padre y al hijo un position relative, darle al hijo un z-index de -1 y no darle un z-index al padre, esta es la unica froma para poder poner padres sobre hijos. */
+    z-index: -1;
+}

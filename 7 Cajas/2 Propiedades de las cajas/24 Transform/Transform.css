@@ -1,0 +1,65 @@
+* {
+    font-family: 'Sen', sans-serif;
+}
+
+.container {
+    background: #86f;
+    padding: 20px 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+}
+
+
+/* La propiedad transform son funciones que hacen que el elemento cresca, se mueva, rote, se deforme, etc... */
+
+.uno {
+    /* translate mueve el elemento, las primera lo mueve en el eje X y la segunda lo mueve en el eje Y. La ultima es un shorthand. */
+    /* transform: translateX(100px);
+    transform: translateY(100px); */
+    /* Si le pasmos porcentajes va a tomar como referencia el alto y ancho de la caja, es decir, que si le damos un 100% en el eje X se movera 80px hacia la derecha, lomismo pasa con el eje Y. */
+    transform: translate(100%, 40px);
+}
+
+.dos {
+    /* scale agranda o achica el elemento dependiendo del valor, las primera lo agranda o achica en el eje X y la segunda lo agranda o achica en el eje Y. La ultima es un shorthand. */
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5); */
+    transform: scale(1.5, 1.2);
+}
+
+.tres1 {
+    /* skew estira los bordes paralelos del el elemento en direcciones opuestas, las primera estira los bordes derecho e izquierdo (los bordes del eje X) y estira los bordes superior e inferior (los bordes del eje Y). La ultima (que esta comentada ya que queria que se notaran los cambios en los ejes por separado) es un shorthand. */
+    transform: skewX(10deg);
+}
+
+.tres2 {
+    transform: skewY(10deg);
+}
+
+
+/* transform: skew(10deg, 10deg); */
+
+.cuatro1 {
+    /* rotate rota la caja en sentido de las agujas del reloj depediendo del valor. Si le damos un valor negativo rota hacia el otro lado. */
+    transform: rotate(30deg);
+}
+
+.cuatro2 {
+    transform: rotate(-30deg);
+}
+
+
+/* Hay mas propiedades y mas valores como translateZ o skewZ que trabajan con la profundidad. */
+
+b {
+    margin: auto;
+}
